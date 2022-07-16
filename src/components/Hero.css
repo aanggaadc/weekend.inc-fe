@@ -1,4 +1,4 @@
-#hero {
+#upper-hero {
     position: absolute;
     top: 0;
     left: 0;
@@ -8,7 +8,7 @@
     overflow: hidden;
 }
 
-#hero .content {
+#upper-hero .title {
     font-family: 'Work Sans', sans-serif;
     color: #FFFFFF;
     text-align: center;
@@ -22,18 +22,19 @@
     z-index: 2;
 }
 
-#hero .content h1{
+#upper-hero .title h1{
     font-size: 52px;
+    line-height: 51px;
     font-weight: 800;
 }
 
-#hero .content p {
+#upper-hero .title p {
     font-size: 16px;
     line-height: 19px;
     font-style: italic;
 }
 
-#hero .path {
+.path {
     position: absolute;
     width: 751.56px;
     height: 182.83px;
@@ -42,7 +43,7 @@
     z-index: 1;
 }
 
-#hero .path2 {
+.path2 {
     position: absolute;
     width: 1366px;
     height: 731.43px;
@@ -50,7 +51,7 @@
     top: 0px;
 }
 
-#hero .oval {
+.oval {
     position: absolute;
     width: 132px;
     height: 132px;
@@ -59,20 +60,28 @@
     z-index: 1;
 }
 
-#hero img{
+#upper-hero .content{
+    width: 100%;
+    height: 305px;
+    width: 100%;
     position: absolute;
+    top: 342px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#upper-hero img{
     width: 184px;
     height: 305px;
-    left: 96px;
-    top: 342px;
     z-index: 2;
 }
 
-#hero button {
+#upper-hero button {
     z-index: 3;
     position: absolute;
-    top: 540px;
-    left: 82px;
+    top: 195px;
     width: 210px;
     height: 50px;    
     background-color: #FFFFFF;
@@ -80,3 +89,81 @@
     border-radius: 29px;
     border: none;
 }
+
+#bottom-hero {
+    position: absolute;
+    width: 100%;
+    height: 648px;
+    left: 0px;
+    top: 667px;
+    background: #EEBECE;
+}
+
+#bottom-hero .upper svg{
+    position: absolute;
+    right: 0;
+}
+
+#bottom-hero .upper img{
+    width: 95px;
+    transform: rotate(-90deg);
+    position: absolute;
+    right: 32px;
+}
+
+.quote {
+    position: absolute;
+    top: 220px;
+    padding: 0 30px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 17px;
+}
+
+.quote span{
+    color: #0B24FB;
+    font-weight: 700;
+}
+
+.quote p{
+    text-align: right;
+    line-height: 19px;
+    color: #FFFFFF;
+    font-style: italic;
+}
+
+.quote p:nth-child(1){
+    font-style: normal;
+    line-height: 24px;
+    letter-spacing: -0.571429px;
+    font-weight: 600;
+    color: #000000;
+}
+
+#bottom-hero .bottom {
+    width: 100%;
+    position: absolute;
+    top: 460px;
+    padding: 0px 35px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.bottom h4{
+    margin: 0;
+    font-size: 32px;
+    line-height: 38px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 900;
+    color: #FFFFFF;
+    position: absolute;
+    left: 40px;
+}
+
+#bottom-hero .bottom svg{
+    margin-bottom: 17px;
+    margin-left: 30px;
+}
+
+
+
