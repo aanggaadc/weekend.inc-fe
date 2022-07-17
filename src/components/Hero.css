@@ -51,6 +51,10 @@
     top: 0px;
 }
 
+#upper-hero .path3 {
+    display: none;
+}
+
 .oval {
     position: absolute;
     width: 132px;
@@ -165,5 +169,51 @@
     margin-left: 30px;
 }
 
+/* RESPONSIVE */
+
+@media (min-width: 841px) and (max-width: 1024px) {
+    #upper-hero {
+        height: 731.43px;;
+    }
+
+    #bottom-hero {
+        height: 591px;
+        top: 730px;
+    }
+
+    .path {
+        left: 119px;
+    }
+
+    .path2{
+        left: 0;
+    }
+
+    #upper-hero .path3 {
+        display: block;
+        position: absolute;
+        width: 266px;
+        height: 327px;
+        left: 890px;
+        top: 303px;
+    }
+
+    .oval {
+        left: 240px;;
+    }
+
+    .quote{
+        padding: 0 20%;
+        font-size: 21px;
+    }
+
+    #bottom-hero .bottom {
+        top: 400px;
+    }
+
+    .bottom h4 {
+        left: 395px;
+    }
+}
 
 

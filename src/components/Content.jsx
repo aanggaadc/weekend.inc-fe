@@ -71,6 +71,12 @@ export default function Content() {
                     <p>The wise man therefore always holds in these matters to this principle of selection.</p>
                 </div>
 
+                <div className='path3'>
+                    <svg width="159" height="195" viewBox="0 0 266 327" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M27.4285 204.37C99.5013 118.948 34.9018 50.4653 109.184 9.47884C183.467 -31.5076 297.847 64.2687 257.68 222.56C217.513 380.851 -92.5468 346.566 27.4285 204.37Z" fill="#FF8787" />
+                    </svg>
+                </div>
+
                 <div className='bottom-container'>
                     <svg width="252" height="295" viewBox="0 0 252 295" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M106.829 295C106.829 295 287.082 137.537 245.053 42.5123C203.024 -52.5123 0 42.5123 0 42.5123V295H106.829Z" fill="#FF8787" />

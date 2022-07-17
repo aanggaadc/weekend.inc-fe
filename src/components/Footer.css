@@ -48,3 +48,16 @@
     }
 }
 
+@media (min-width: 513px) and (max-width: 768px) {
+    #footer {
+        top: 3145px;
+    }
+}
+
+@media (min-width: 841px) and (max-width: 1024px) {
+    #footer {
+        padding: 20px 20%;
+        top: 2795px;
+    }
+}
+
