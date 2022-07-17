@@ -33,8 +33,8 @@ export default function Content() {
 
     return (
         <>
-            <section id="content">
-                <div className='scrolling-wrapper'>
+            <section id="contents">
+                <div className='testi-wrapper'>
                     {dataTestimonial.map((item, index) => {
                         return (
                             <div key={index} className='testi-card'>
@@ -45,7 +45,7 @@ export default function Content() {
                     })}
                 </div>
 
-                <div className='contents'>
+                <div className='content'>
                     <h1>POV</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         Ut enim ad minim veniam, quis nostrud ullamco laboris nisi ea commodo consequat.
@@ -54,9 +54,7 @@ export default function Content() {
                     <h1>Resource</h1>
                     <p>These cases are perfectly simple and easy to distinguish. In a free hour,
                         when our power of choice is untrammelled and when nothing prevents our being able to do what we like best</p>
-                </div>
 
-                <div className='tips'>
                     <h1>Help & Tips</h1>
                     <div className='tipscard-container'>
                         {dataTips.map((item, index) => {
@@ -73,7 +71,12 @@ export default function Content() {
                     <p>The wise man therefore always holds in these matters to this principle of selection.</p>
                 </div>
 
-                {/* <img src={Icon2} alt="icon2" /> */}
+                <div className='bottom-container'>
+                    <svg width="252" height="295" viewBox="0 0 252 295" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M106.829 295C106.829 295 287.082 137.537 245.053 42.5123C203.024 -52.5123 0 42.5123 0 42.5123V295H106.829Z" fill="#FF8787" />
+                    </svg>
+                    <img src={Icon2} alt="icon2" />
+                </div>
             </section>
 
         </>

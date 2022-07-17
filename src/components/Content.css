@@ -1,13 +1,13 @@
-#content {
+#contents {
     position: absolute;
     width: 100%;
-    height: 2038px;
+    height: 1950px;
     left: 0px;
     background: #000000;
     top: 1315px;
 }
 
-.scrolling-wrapper {
+.testi-wrapper {
     position: absolute;
     top: -70px;
     width: 100%;
@@ -49,7 +49,7 @@
     color: #000000;
 }
 
-.contents{
+.content{
     position: absolute;
     top: 170px;
     left: 0;
@@ -59,7 +59,7 @@
     padding: 0 30px;
 }
 
-.contents h1, .tips h1 {
+.content h1 {
     font-size: 32px;
     line-height: 38px;
     font-weight: 800;
@@ -67,20 +67,12 @@
     color: #ffffff; 
 }
 
-.contents p, .tips p {
+.content p {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.571429px;
     margin-bottom: 65px;
     color: #ffffff; 
-}
-
-.tips {
-    position: absolute;
-    width: 100%;
-    font-family: 'Work Sans', sans-serif;
-    padding: 0 30px;  
-    top: 720px;
 }
 
 .tipscard-container {
@@ -89,7 +81,7 @@
     flex-direction: column;
     gap: 10px;
     height: auto;
-    margin-bottom: 70px;
+    margin-bottom: 60px;
 }
 
 .tips-card{
@@ -126,4 +118,21 @@
     letter-spacing: -0.571429px;
     font-family: 'Work Sans', sans-serif;
     color: #FFFFFF;
+}
+
+#contents .bottom-container {
+    position: absolute;
+    top: 1655px;
+    width: 253px;
+    height: 300px;
+    left: 0;
+}
+
+.bottom-container img{
+    position: absolute;
+    left: 30px;
+    top: -40px;
+    width: 142px;
+    height: 236px;
+    transform: matrix(1, 0, 0, -1, 0, 0);
 }
