@@ -282,8 +282,8 @@
         position: absolute;
         width: 159px;
         height: 195px;
-        right: 245px;
-        bottom: 470px;
+        right: 17%;
+        bottom: 38%;
         transform: matrix(-1, 0, 0, 1, 0, 0);
     }
 
@@ -309,7 +309,7 @@
     }
 
     .testi-container .left {
-        left: 25%;
+        left: 23.5%;
     }
     
     .testi-container .right {
