@@ -26,8 +26,15 @@
     gap: 15px;
     flex-wrap: nowrap;
     overflow-x: auto;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;
+    overflow: -moz-scrollbars-none; 
 }
 
+.testi-wrapper::-webkit-scrollbar{
+    display: none;
+  }
+  
 .testi-card {
     flex: 0 0 auto;
     height: 140px;
