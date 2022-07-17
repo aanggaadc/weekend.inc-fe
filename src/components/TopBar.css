@@ -35,6 +35,8 @@
     font-weight: bold;
 }
 
+/* RESPONSIVE */
+
 @media (min-width: 1024px) {
     .topbar-container{
         padding: 20px 20%;

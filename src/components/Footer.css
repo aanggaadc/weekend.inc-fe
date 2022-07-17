@@ -1,6 +1,6 @@
 #footer {
     position: absolute;
-    top: 3265px;
+    top: 3315px;
     left: 0;
     width: 100%;
     height: 67px;
@@ -23,6 +23,7 @@
 .copyright span{
     font-weight: 700;
 }
+
 .version {
     width: 94px;
     height: 18px;
@@ -38,5 +39,12 @@
     color: #FFFFFF;
     text-align: center;
     vertical-align: middle;
+}
+
+/* RESPONSIVE */
+@media (max-width: 320px) {
+    #footer {
+        top: 3410px;
+    }
 }
 
