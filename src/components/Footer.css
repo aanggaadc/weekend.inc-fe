@@ -54,10 +54,17 @@
     }
 }
 
-@media (min-width: 841px) and (max-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1360px){
     #footer {
         padding: 20px 20%;
         top: 2795px;
+    }
+}
+
+@media (min-width: 1361px){
+    #footer {
+        padding: 20px 20%;
+        top: 2620px;
     }
 }
 

@@ -171,7 +171,7 @@
 
 /* RESPONSIVE */
 
-@media (min-width: 841px) and (max-width: 1024px) {
+@media (min-width: 841px) and (max-width: 1360px)  {
     #upper-hero {
         height: 731.43px;;
     }
@@ -213,6 +213,68 @@
 
     .bottom h4 {
         left: 395px;
+    }
+}
+
+@media (min-width: 1361px) {
+    #upper-hero {
+        height: 731.43px;;
+    }
+
+    #bottom-hero {
+        height: 591px;
+        top: 730px;
+    }
+
+    .path {
+        left: 119px;
+    }
+
+    .path2{
+        left: 0;
+        top: -56px;
+    }
+
+    #upper-hero .path3 {
+        display: block;
+        position: absolute;
+        width: 266px;
+        height: 327px;
+        left: 950px;
+        top: 303px;
+    }
+
+    .oval {
+        left: 465px;;
+    }
+
+    .quote{
+        top: 155px;
+        padding: 0 30%;
+        font-size: 21px;
+    }
+
+    .quote p:nth-child(1) {
+        line-height: 32px;
+        letter-spacing: -0.75px;
+    }
+
+    #bottom-hero .bottom {
+        top: 400px;
+        padding: 0 20%;
+    }
+
+    .bottom h4 {
+        position: static;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-right: auto;
+        margin-left: 30%;
+    }
+
+    #bottom-hero .bottom svg{
+        margin-bottom: 0;
+        margin-left: 0;
     }
 }
 
