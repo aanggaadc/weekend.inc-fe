@@ -1,12 +1,18 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import './Content.css'
 import Axios from 'axios'
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
+import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import Icon2 from '../assets/icon2.png'
 
 export default function Content() {
     const [dataTestimonial, setDataTestimonial] = useState([])
     const [dataTips, setDataTips] = useState([])
+    const ref = useRef(null)
+
+    const scroll = (scrollOffset) => {
+        ref.current.scrollLeft += scrollOffset;
+    };
 
     const getTestimonial = () => {
         Axios.get("https://wknd-take-home-challenge-api.herokuapp.com/testimonial")
@@ -34,15 +40,27 @@ export default function Content() {
     return (
         <>
             <section id="contents">
-                <div className='testi-wrapper'>
-                    {dataTestimonial.map((item, index) => {
-                        return (
-                            <div key={index} className='testi-card'>
-                                <h4>{item.by}</h4>
-                                <p>{item.testimony}</p>
-                            </div>
-                        )
-                    })}
+                <div className='testi-container'>
+                    <button onClick={() => {
+                        scroll(-100)
+                    }} className='left'>
+                        <FaArrowLeft size={15} color='blue' />
+                    </button>
+                    <div className='testi-wrapper' ref={ref}>
+                        {dataTestimonial.map((item, index) => {
+                            return (
+                                <div key={index} className='testi-card'>
+                                    <h4>{item.by}</h4>
+                                    <p>{item.testimony}</p>
+                                </div>
+                            )
+                        })}
+                    </div>
+                    <button onClick={() => {
+                        scroll(100)
+                    }} className='right'>
+                        <FaArrowRight size={15} color='blue' />
+                    </button>
                 </div>
 
                 <div className='content'>
