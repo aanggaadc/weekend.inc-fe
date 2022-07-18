@@ -39,6 +39,7 @@
     -ms-overflow-style: none;  
     scrollbar-width: none;
     overflow: -moz-scrollbars-none; 
+    scroll-behavior: smooth;
 }
 
 .testi-wrapper::-webkit-scrollbar{
