@@ -8,10 +8,13 @@ import Icon2 from '../assets/icon2.png'
 export default function Content() {
     const [dataTestimonial, setDataTestimonial] = useState([])
     const [dataTips, setDataTips] = useState([])
-    const ref = useRef(null)
+    const [scrollValue, setScrollValue] = useState(0)
+    const ref = useRef(0)
+    const maxScrollValue = ref.current.scrollWidth - ref.current.clientWidth;
 
     const scroll = (scrollOffset) => {
         ref.current.scrollLeft += scrollOffset;
+        setScrollValue(ref.current.scrollLeft)
     };
 
     const getTestimonial = () => {
@@ -42,8 +45,8 @@ export default function Content() {
             <section id="contents">
                 <div className='testi-container'>
                     <button onClick={() => {
-                        scroll(-100)
-                    }} className='left'>
+                        scroll(-50)
+                    }} className='left' disabled={scrollValue === 0}>
                         <FaArrowLeft size={15} color='blue' />
                     </button>
                     <div className='testi-wrapper' ref={ref}>
@@ -57,8 +60,8 @@ export default function Content() {
                         })}
                     </div>
                     <button onClick={() => {
-                        scroll(100)
-                    }} className='right'>
+                        scroll(50)
+                    }} className='right' disabled={scrollValue >= maxScrollValue}>
                         <FaArrowRight size={15} color='blue' />
                     </button>
                 </div>
