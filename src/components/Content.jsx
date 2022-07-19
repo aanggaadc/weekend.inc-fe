@@ -45,7 +45,7 @@ export default function Content() {
             <section id="contents">
                 <div className='testi-container'>
                     <button onClick={() => {
-                        scroll(-50)
+                        scroll(-100)
                     }} className='left' disabled={scrollValue === 0}>
                         <FaArrowLeft size={15} color='blue' />
                     </button>
@@ -60,7 +60,7 @@ export default function Content() {
                         })}
                     </div>
                     <button onClick={() => {
-                        scroll(50)
+                        scroll(100)
                     }} className='right' disabled={scrollValue >= maxScrollValue}>
                         <FaArrowRight size={15} color='blue' />
                     </button>
